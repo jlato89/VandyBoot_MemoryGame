@@ -1,14 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
-import Banner from './components/Banner';
+import Jumbotron from './components/Jumbotron';
 import ImageContainer from './components/ImageContainer';
-import './App.css';
+import './Normalize.css';
 
 function App() {
   return (
      <div className='App' style={{ textAlign: "center" }}>
        <Header />
-       <Banner />
+       <Jumbotron />
        <ImageContainer />
      </div>
   );
