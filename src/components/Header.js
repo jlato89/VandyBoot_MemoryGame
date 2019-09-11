@@ -1,11 +1,25 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Header extends Component {
-   render() {
-      return (
-         <div>
-            <h1>Header</h1>
-         </div>
-      )
-   }
+function Header() {
+   return (
+      <div
+         className='headerContainer'
+         style={{
+            display: 'flex',
+            justifyContent: 'space-around',
+            padding: '28px'}}
+      >
+         <span className='headerTitle'>
+            Clicky Game
+         </span>
+         <span className='headerInfo'>
+            Click an image to begin!
+         </span>
+         <span className='headerScore'>
+            Score: SCORE | Top Score: TOPSCORE
+         </span>
+      </div>
+   );
 }
+
+export default Header;
